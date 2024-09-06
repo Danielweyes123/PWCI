@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bytecademy - Kardex de Ventas</title>
+    <link rel="stylesheet" href="detail_sell_report.css">
+    <link rel="icon" href="recursos/BytecademyLogo.png" type="image/png">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-logo">
+                <img src="recursos/BytecademyBanner.png" alt="Bytecademy Logo">
+            </a>
+            <ul class="navbar-menu">
+                <li><a href="home.html">[ home ]</a></li>
+                <li><a href="my_courses.html">[ my_courses ]</a></li>
+                <li><a href="my_messages.html">[ my_messages ]</a></li>
+                <li><a href="kardex.html">[ kardex ]</a></li>
+                <li><a href="profile.html">[ profile ]</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section>
+            <h2>SELLS_REPORT</h2>
+            <form id="sells-filter" method="POST" action="">
+                <label for="start-date">start_date:</label>
+                <input type="date" id="start-date" name="start-date">
+        
+                <label for="end-date">end_date:</label>
+                <input type="date" id="end-date" name="end-date">
+        
+                <label for="categoria">category:</label>
+                <select id="categoria" name="categoria">
+                    <option value="todas">all</option>
+                    <option value="frontend">frontend</option>
+                    <option value="backend">backend</option>
+                    <option value="android">android</option>
+                    <option value="ios">iOS</option>
+                    <option value="php">php</option>
+                    <option value="csharp">c#</option>
+                    <option value="cpp">c/c++</option>
+                    <option value="java">java</option>
+                    <option value="python">python</option>
+                    <option value="sql">sql</option>
+                </select>
+        
+                <label for="status">status:</label>
+                <select id="status" name="status">
+                    <option value="todos">all</option>
+                    <option value="terminados">only_finished</option>
+                    <option value="activos">only_ongoing</option>
+                </select>
+        
+                <br>
+                <button type="submit">[ apply_filters ]</button>
+            </form>
+        </section>
+    </div>
+
+    <div class="sells">
+        <section>
+            <div class="sells-title">
+                <h2>DETAILS_OF_ENROLLED_STUDENTS_BY_COURSE</h2>
+                <h3>COURSE: Curso de Programación Web</h3>
+            </div>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Alumno</th>
+                        <th>Fecha de Inscripción</th>
+                        <th>Nivel de Avance</th>
+                        <th>Precio Pagado</th>
+                        <th>Forma de Pago</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Juan Pérez</td>
+                        <td>01 Ago 2024</td>
+                        <td>50%</td>
+                        <td>$100.00</td>
+                        <td>Tarjeta de Crédito</td>
+                    </tr>
+                    <tr>
+                        <td>Ana Gómez</td>
+                        <td>15 Ago 2024</td>
+                        <td>80%</td>
+                        <td>$120.00</td>
+                        <td>PayPal</td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+            <div class="sells-income">
+                <h3>TOTAL_COURSE_INCOME</h3>
+                <p>$12,345.67</p>
+            </div>
+
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 BYTECADEMY. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

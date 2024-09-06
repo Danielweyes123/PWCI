@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bytecademy</title>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="icon" href="recursos/BytecademyLogo.png" type="image/png">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-logo">
+                <img src="recursos/BytecademyBanner.png" alt="Bytecademy Logo">
+            </a>
+            <ul class="navbar-menu">
+                <li><a href="home.html">[ home ]</a></li>
+                <li><a href="my_courses.html">[ my_courses ]</a></li>
+                <li><a href="my_messages.html">[ my_messages ]</a></li>
+                <li><a href="kardex.html">[ kardex ]</a></li>
+                <li><a href="profile.html">[ profile ]</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="main-container">
+        <aside class="left-column">
+            <h2>USER_INFORMATION</h2>
+            <img src="https://codersfree.nyc3.cdn.digitaloceanspaces.com/posts/conoce-5-lenguajes-de-programacion-basicos.jpg" alt="Curso 1" class="course-image">
+            <h1>Daniel Reyes Rodriguez</h1>
+            <h1>Delayta</h1>
+            <h1>Hombre</h1>
+            <h1>5/10/2001</h1>
+        </aside>
+
+        <section class="right-column">
+            <h2>EDIT_PROFILE</h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <td><label for="fullname">Full Name</label></td>
+                        <td><input type="text" id="fullname" value="Daniel Reyes Rodriguez" name="fullname"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="username">Username</label></td>
+                        <td><input type="text" id="username" value="Delayta" name="username"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email</label></td>
+                        <td><input type="text" id="email" value="danielweyes@mail.com" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password</label></td>
+                        <td><input type="password" id="password" value="Daniel123!" name="password"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="avatar">Avatar</label></td>
+                        <td class="file-upload-container">
+                            <input type="file" id="avatar" name="avatar" onchange="previewImage(event)">
+                            <label for="avatar">[ upload-file ]</label>
+                            <img id="avatar-preview" src="recursos/default.png" alt="Avatar Preview">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="submit" value="[ modify ]"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 BYTECADEMY. all rights reserved.</p>
+    </footer>
+
+</body>
+</html>

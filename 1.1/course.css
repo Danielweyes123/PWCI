@@ -1,0 +1,190 @@
+*{
+    font-family: Courier New, monospace;
+}
+
+::-webkit-scrollbar {
+    width: 4px; /* ancho del scrollbar */
+    
+}
+
+::-webkit-scrollbar-track {
+    background: #021400;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: #15ff00;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    color: #15ff00;
+
+    background-image: url('recursos/NvN.gif'); 
+    background-size:cover;
+    background-position: center;
+}
+
+.navbar {
+    background-color: #000000;
+    border: 1px solid #15ff00;
+    color: #15ff00;
+    padding: 20px;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    color: #15ff00;
+    text-decoration: none;
+}
+
+.navbar-logo img {
+    height: 40px; 
+    width: auto; 
+    display: block;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-menu li a {
+    color: #15ff00;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar-menu li a:hover {
+    text-decoration: underline;
+}
+
+.main-container {
+    flex: 1;
+    padding: 20px;
+}
+
+.single-column {
+    background-color: #000000;
+    border: 1px solid #15ff00;
+    overflow-y: auto;
+    max-height: 496px;
+}
+
+.single-column h2 {
+    font-size: larger;
+    margin: 0;
+    padding: 5px;
+    border-bottom: 1px solid #15ff00;
+}
+
+.single-column h1 {
+    text-align: center;
+    font-size: x-large;
+    margin: 0;
+    padding: 10px;
+}
+
+.course-img {
+    width: 100%;
+    text-align: center;
+}
+
+.course-img img {
+    width: 400px;
+    border: 1px solid #15ff00;
+    margin: 10px;
+}
+.course-content {
+    text-align: center;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #15ff00;
+    margin-bottom: 20px;
+}
+.course-content h3 {
+    font-size: x-large;
+    border-bottom: 1px solid #15ff00;
+    padding: 10px;
+    margin: 0%;
+}
+.level {
+    display: none;
+    margin-bottom: 20px;
+}
+.content-item {
+    padding: 20px;
+    border-bottom: 1px solid #15ff00;
+}
+.content-item a {
+    text-decoration: none;
+    color: #15ff00;
+}
+.content-item a:hover {
+    text-decoration: underline;
+}
+.content-item p {
+    margin: 0;
+}
+.level img{
+    width: 400px;
+}
+.level button{
+    margin-top: 20px;
+    padding: 10px;
+}
+.level.active {
+    display: block;
+}
+
+button {
+    background-color: #000000;
+    color: #15ff00; 
+    padding: 10px 20px; 
+    border: none; 
+    cursor: pointer; 
+    font-size: 16px; 
+}
+
+button:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: #000000;
+    border: 1px solid #15ff00;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.congratulations {
+    display: none;
+    text-align: center;
+}
+
+.diploma-btn {
+    background-color: #000000;
+    color: #15ff00; 
+    border: none; 
+    cursor: pointer; 
+    font-size: 16px; 
+    margin-bottom: 20px;
+}
+
+.diploma-btn:hover {
+    text-decoration: underline;
+}
+
+

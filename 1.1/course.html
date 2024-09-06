@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bytecademy</title>
+    <link rel="stylesheet" href="course.css">
+    <link rel="icon" href="recursos/BytecademyLogo.png" type="image/png">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-logo">
+                <img src="recursos/BytecademyBanner.png" alt="Bytecademy Logo">
+            </a>
+            <ul class="navbar-menu">
+                <li><a href="home.html">[ home ]</a></li>
+                <li><a href="my_courses.html">[ my_courses ]</a></li>
+                <li><a href="my_messages.html">[ my_messages ]</a></li>
+                <li><a href="kardex.html">[ kardex ]</a></li>
+                <li><a href="profile.html">[ profile ]</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <section class="single-column">
+            <h2>COURSE</h2>
+            <h1>Curso de Programación C++</h2>
+            <div class="course-img">
+                <img src="https://codersfree.nyc3.cdn.digitaloceanspaces.com/posts/conoce-5-lenguajes-de-programacion-basicos.jpg">
+            </div>
+            <div class="course-content">
+                <div class="level" id="level-1">
+                    <h3>LEVEL_1</h3>
+                    <div class="content-item">
+                        <p>Course description</p>
+                    </div>
+                    <div class="content-item">
+                        <video controls>
+                            <source src="ruta_del_video_nivel_1.mp4" type="video/mp4">
+                            Your browser does not support the video element.
+                        </video>
+                    </div>
+                    <div class="content-item">
+                        <img src="https://codersfree.nyc3.cdn.digitaloceanspaces.com/posts/conoce-5-lenguajes-de-programacion-basicos.jpg">
+                    </div>
+                    <div class="content-item">
+                        <a href="ruta_de_archivo_nivel_1.pdf" download>[ download_level_1_material ]</a>
+                    </div>
+                    <button onclick="completeLevel(1)">[ complete_level ]</button>
+                </div>
+    
+                <div class="level" id="level-2">
+                    <h3>LEVEL_2</h3>
+                    <div class="content-item">
+                        <p>Course description</p>
+                    </div>
+                    <div class="content-item">
+                        <video controls>
+                            <source src="ruta_del_video_nivel_2.mp4" type="video/mp4">                       
+                                Your browser does not support the video element.
+                        </video>
+                    </div>
+                    <div class="content-item">
+                        <img src="ruta_de_imagen_nivel_2.jpg" alt="Imagen Nivel 2">
+                    </div>
+                    <div class="content-item">
+                        <a href="ruta_de_archivo_nivel_2.pdf" download>[ download_level_2_material ]</a>
+                    </div>
+                    <button onclick="completeLevel(2)">[ complete_level ]</button>
+                </div>
+    
+
+                <div id="congratulations" class="congratulations">
+                    <h3>Congratulations, you have completed the course!</h3>
+                    <p>You can download your diploma below.</p>
+                    <a href="ruta_del_diploma.pdf" download>
+                        <button class="diploma-btn">[ download_diploma]</button>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+    </div>
+    
+    <footer class="footer">
+        <p>&copy; 2024 BYTECADEMY. all rights reserved.</p>
+    </footer>
+</body>
+
+<script src="course.js"></script>
+
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bytecademy - Kardex de Ventas</title>
+    <link rel="stylesheet" href="sell_report.css">
+    <link rel="icon" href="recursos/BytecademyLogo.png" type="image/png">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-logo">
+                <img src="recursos/BytecademyBanner.png" alt="Bytecademy Logo">
+            </a>
+            <ul class="navbar-menu">
+                <li><a href="home.html">[ home ]</a></li>
+                <li><a href="create_course.html">[ create_course ]</a></li>
+                <li><a href="see_course.html">[ see_courses ]</a></li>
+                <li><a href="my_messages.html">[ my_messages ]</a></li>
+                <li><a href="sell_report.html">[ sells_report ]</a></li>
+                <li><a href="profile.html">[ profile ]</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section>
+            <h2>SELLS_REPORT</h2>
+            <form id="sells-filter" method="POST" action="">
+                <label for="start-date">start_date:</label>
+                <input type="date" id="start-date" name="start-date">
+        
+                <label for="end-date">end_date:</label>
+                <input type="date" id="end-date" name="end-date">
+        
+                <label for="categoria">category:</label>
+                <select id="categoria" name="categoria">
+                    <option value="todas">all</option>
+                    <option value="frontend">frontend</option>
+                    <option value="backend">backend</option>
+                    <option value="android">android</option>
+                    <option value="ios">iOS</option>
+                    <option value="php">php</option>
+                    <option value="csharp">c#</option>
+                    <option value="cpp">c/c++</option>
+                    <option value="java">java</option>
+                    <option value="python">python</option>
+                    <option value="sql">sql</option>
+                </select>
+        
+                <label for="status">status:</label>
+                <select id="status" name="status">
+                    <option value="todos">all</option>
+                    <option value="terminados">only_finished</option>
+                    <option value="activos">only_ongoing</option>
+                </select>
+        
+                <br>
+                <button type="submit">[ apply_filters ]</button>
+            </form>
+        </section>
+    </div>
+
+    <div class="sells">
+        <section>
+            <div class="sells-income">
+                <h3>TOTAL_INCOME_FROM_ALL_PAYMENTS_MEHTODS</h3>
+                <p>Tarjeta de Crédito: $15,000.00</p>
+                <p>PayPal: $5,000.00</p>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Curso</th>
+                        <th>Categoría</th>
+                        <th>Alumnos Inscritos</th>
+                        <th>Progreso Promedio</th>
+                        <th>Total Ingresos</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Curso de Programación Web</td>
+                        <td>Frontend</td>
+                        <td>120</td>
+                        <td>75%</td>
+                        <td>$12,345.67</td>
+                        <td><a href="detail_sell_report.html">[ details ]</a></td>
+                    </tr>
+                    <tr>
+                        <td>C++ Fácil y Rápido</td>
+                        <td>C/C++</td>
+                        <td>80</td>
+                        <td>60%</td>
+                        <td>$8,910.50</td>
+                        <td><a href="detail_sell_report.html">[ details ]</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 BYTECADEMY. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

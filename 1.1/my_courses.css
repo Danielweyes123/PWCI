@@ -1,0 +1,167 @@
+*{
+    font-family: Courier New, monospace;
+}
+
+::-webkit-scrollbar {
+    width: 4px; /* ancho del scrollbar */
+    
+}
+
+::-webkit-scrollbar-track {
+    background: #021400;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: #15ff00;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    color: #15ff00;
+
+    background-image: url('recursos/NvN.gif'); 
+    background-size:cover;
+    background-position: center;
+}
+
+.navbar {
+    background-color: #000000;
+    border: 1px solid #15ff00;
+    color: #15ff00;
+    padding: 20px;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    color: #15ff00;
+    text-decoration: none;
+}
+
+.navbar-logo img {
+    height: 40px; 
+    width: auto; 
+    display: block;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-menu li a {
+    color: #15ff00;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar-menu li a:hover {
+    text-decoration: underline;
+}
+
+.main-container {
+    flex: 1;
+    padding: 20px;
+}
+
+.single-column {
+    background-color: #000000;
+    border: 1px solid #15ff00;
+    overflow-y: auto;
+    max-height: 498px;;
+}
+
+.single-column h2 {
+    font-size: larger;
+    margin: 0;
+    padding: 5px;
+    border-bottom: 1px solid #15ff00;
+}
+
+.footer {
+    background-color: #000000;
+    border: 1px solid #15ff00;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.filter {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #15ff00;
+}
+
+input[type="radio"] {
+    opacity: 0;
+}
+input[type="radio"]+label {
+    cursor: pointer;
+    font-size: 14px;
+}
+input[type="radio"]:checked + label {
+    text-decoration: underline;
+}
+
+
+.course-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.course-item {
+    border: 1px solid #15ff00;
+    background-color: #000000;
+    padding: 15px;
+    width: calc(30% - 100px);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.course-image {
+    width: 100%;
+    height: 150px;
+    border: 1px solid #15ff00;
+}
+
+.course-title {
+    font-size: 18px;
+    margin: 10px 0 5px;
+    color: #15ff00;
+}
+
+.course-price {
+    font-size: 16px;
+    color: #15ff00;
+}
+
+.course-item a {
+    color: #15ff00;
+    text-decoration: none;
+}
+
+.course-item a:hover {
+    text-decoration: underline;
+}
+
+.course-item:hover {
+    border: 1px solid #ffffff;
+
+    background-image: url('recursos/NvN.gif'); 
+    background-size:cover;
+    background-position: center;
+}
