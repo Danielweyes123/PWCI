@@ -1,0 +1,115 @@
+*{
+    font-family: Courier New, monospace;
+    color: #15ff00;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    color: #15ff00;
+
+    background-image: url('recursos/NvN.gif'); 
+    background-size:cover;
+    background-position: center;
+}
+
+.navbar {
+    background-color: #000000;
+    border: 1px solid #15ff00;
+    color: #15ff00;
+    padding: 20px;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    color: #15ff00;
+    text-decoration: none;
+}
+
+.navbar-logo img {
+    height: 40px; 
+    width: auto; 
+    display: block;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-menu li a {
+    color: #15ff00;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar-menu li a:hover {
+    text-decoration: underline;
+}
+
+/* Contenedor de la Sección de Filtros */
+.container {
+    background-color: #000000;
+    margin: 20px;
+    border:1px solid #15ff00 ;
+}
+
+.container h2 {
+    margin: 0;
+    padding: 5px;
+}
+
+
+
+.kardex{
+    height: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.kardex h2{
+    margin: 0;
+    padding: 5px;
+    border-bottom:1px solid #15ff00 ;
+}
+
+.kardex table {
+    background-color: #000000;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.kardex table, .kardex th, .kardex td {
+    border: 1px solid #15ff00;
+    padding: 8px;
+    text-align: left;
+}
+
+.see-course:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.disable:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+.footer {
+    background-color: #000000;
+    border: 1px solid #15ff00;
+    text-align: center;
+    padding: 10px 0;
+}
