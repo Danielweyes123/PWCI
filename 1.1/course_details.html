@@ -58,7 +58,7 @@
                         <p>$125</p>
                         <p>El mejor curso de programacion para principiantes que podras encontrar en la internet a dia de hoy.</p>
                         <p>Valoración: 4.3</p>
-                        <input type="submit" value="[ buy_course ]">
+                        <input type="submit" value="[ buy_course ]" id="buyCourseBtn">
                     </div>
                     <div class="comments">
                         <p id="comments">COMMENTS</p>
@@ -67,10 +67,44 @@
                     </div>
                 </div>
         </section>
+
+        <div id="paymentModal" class="modal">
+            <div class="modal-content">
+                <h3>Selecciona tu método de pago</h3>
+                <p>Monto a pagar: $125</p>
+                <label for="paymentMethod">Método de Pago:</label>
+                <select id="paymentMethod">
+                    <option value="none">Seleccione un método</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="card">Tarjeta de crédito/débito</option>
+                </select>
+        
+                <!-- Card Payment Form -->
+                <div id="cardDetails" class="hidden">
+                    <h4>Información de la tarjeta</h4>
+                    <label for="cardNumber">Número de tarjeta:</label>
+                    <input type="text" id="cardNumber" placeholder="1234 5678 9123 4567">
+                    <label for="cardName">Nombre en la tarjeta:</label>
+                    <input type="text" id="cardName" placeholder="Nombre completo">
+                    <label for="cardExpiry">Fecha de expiración (MM/AA):</label>
+                    <input type="text" id="cardExpiry" placeholder="MM/AA">
+                    <label for="cardCVC">CVC:</label>
+                    <input type="text" id="cardCVC" placeholder="123">
+                </div>
+        
+                <div class="modal-footer">
+                    <button id="completePurchaseBtn">[ purchase ]</button>
+                    <button id="closeModalBtn">[ close ]</button>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <footer class="footer">
         <p>&copy; 2024 BYTECADEMY. all rights reserved.</p>
     </footer>
+
+    <script src="course_details.js"></script>
 </body>
 </html>
